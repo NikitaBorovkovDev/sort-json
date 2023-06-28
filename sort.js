@@ -8,8 +8,7 @@ const sortedData = data.map((obj) => {
     return obj.city;
 });
 console.log(sortedData);
-// Преобразование отсортированного массива в JSON-строку
+
 const sortedJson = JSON.stringify(sortedData);
 
-// Сохранение отсортированной JSON-строки в файл
 fs.writeFileSync("sortedData.json", sortedJson, "utf8");
